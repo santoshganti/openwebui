@@ -1,0 +1,32 @@
+services:
+  # Ollama
+  ollama:
+    image: ollama/ollama:latest
+    container_name: openwebui-ollama
+    hostname: openwebui-ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    runtime: nvidia
+    tty: true
+    pull_policy: always
+    env_file:
+      - .env
+    environment:
+      OLLAMA_KEEP_ALIVE: ${OPENWEBUI_OLLAMA_KEEP_ALIVE}
+    networks:
+      - ollama
+    ports:
+      - 7869:11434
+    volumes:
+      - ${APPSTORAGE}/shared:/code
+      - ${APPSTORAGE}/ollama:/root/.ollama
+    restart: unless-stopped
+networks:
+  ollama:
+    internal: true
