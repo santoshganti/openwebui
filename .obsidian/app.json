@@ -1,0 +1,14 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "livePreview": true,
+  "strictLineBreaks": false,
+  "uriCallbacks": true,
+  "showUnsupportedFiles": true,
+  "readableLineLength": false,
+  "trashOption": "system",
+  "attachmentFolderPath": "system/attachments",
+  "userIgnoreFilters": [
+    "node_modules/"
+  ]
+}

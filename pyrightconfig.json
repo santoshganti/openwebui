@@ -1,0 +1,42 @@
+{
+    "ignore": [
+        "**/.local/share",
+        "**/.local/state",
+        "**/.local/node_modules",
+        "**/.cache",
+        "**/__pycache__",
+        "**/venv",
+        "**/.venv",
+        "**/build",
+        "**/dist"
+    ],
+    "exclude": [
+        "**/.local/share",
+        "**/.local/state",
+        "**/.local/node_modules",
+        "**/.cache",
+        "**/__pycache__",
+        "**/venv",
+        "**/.venv",
+        "**/build",
+        "**/dist"
+    ],
+    "defineConstant": {
+        "DEBUG": false
+    },
+    "useLibraryCodeForTypes": true,
+    "typeCheckingMode": "off",
+      "pythonVersion": "3.13",
+      "pythonPlatform": "All",
+    "reportMissingImports": false,
+    "reportMissingTypeStubs": false,
+    "reportGeneralTypeIssues": "none",
+    "executionEnvironments": [
+        {
+            "root": "./",
+            "venvPath": "/share/pyzfs",
+            "venv": "pyzfs"
+        }
+    ],
+    "stubPath": "share/stubs"
+}
