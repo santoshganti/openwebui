@@ -1,0 +1,217 @@
+# configs/searxng/settings.yml
+# Based on working TrueNAS template with minimal changes for OpenWebUI
+
+general:
+  debug: false
+  instance_name: 'OpenWebUI Search'
+  privacypolicy_url: false
+  donation_url: false
+  contact_url: false
+  enable_metrics: true
+  open_metrics: ''
+
+brand:
+  new_issue_url: https://github.com/searxng/searxng/issues/new
+  docs_url: https://docs.searxng.org/
+  public_instances: https://searx.space
+  wiki_url: https://github.com/searxng/searxng/wiki
+  issue_url: https://github.com/searxng/searxng/issues
+
+search:
+  safe_search: 0
+  autocomplete: ''
+  autocomplete_min: 4
+  favicon_resolver: ''
+  default_lang: 'auto'
+  ban_time_on_fail: 5
+  max_ban_time_on_fail: 120
+  suspended_times:
+    SearxEngineAccessDenied: 86400
+    SearxEngineCaptcha: 86400
+    SearxEngineTooManyRequests: 3600
+    cf_SearxEngineCaptcha: 1296000
+    cf_SearxEngineAccessDenied: 86400
+    recaptcha_SearxEngineCaptcha: 604800
+
+  # CRITICAL CHANGE: Add JSON format for API access
+  formats:
+    - html
+    - json
+
+server:
+  port: 8080
+  bind_address: '0.0.0.0' # CHANGED: Was 127.0.0.1
+  base_url: /
+  limiter: false # CHANGED: Was unset, disable for API access
+  public_instance: false
+  secret_key: 'YYTK53ZCKMK8VMzce4XRga89UpFvADEm'
+  image_proxy: false
+  http_protocol_version: '1.0'
+  method: 'POST'
+  default_http_headers:
+    X-Content-Type-Options: nosniff
+    X-Download-Options: noopen
+    X-Robots-Tag: noindex, nofollow
+    Referrer-Policy: no-referrer
+
+redis:
+  url: false
+
+ui:
+  static_path: ''
+  static_use_hash: false
+  templates_path: ''
+  query_in_title: false
+  infinite_scroll: false
+  default_theme: simple
+  center_alignment: false
+  default_locale: ''
+  theme_args:
+    simple_style: auto
+  search_on_category_select: true
+  hotkeys: default
+  url_formatting: pretty
+
+outgoing:
+  request_timeout: 3.0
+  useragent_suffix: ''
+  pool_connections: 100
+  pool_maxsize: 20
+  enable_http2: true
+
+plugins:
+  searx.plugins.calculator.SXNGPlugin:
+    active: true
+  searx.plugins.hash_plugin.SXNGPlugin:
+    active: true
+  searx.plugins.self_info.SXNGPlugin:
+    active: true
+  searx.plugins.unit_converter.SXNGPlugin:
+    active: true
+  searx.plugins.ahmia_filter.SXNGPlugin:
+    active: true
+  searx.plugins.hostnames.SXNGPlugin:
+    active: true
+  searx.plugins.oa_doi_rewrite.SXNGPlugin:
+    active: false
+  searx.plugins.tor_check.SXNGPlugin:
+    active: false
+  searx.plugins.tracker_url_remover.SXNGPlugin:
+    active: false
+
+checker:
+  off_when_debug: true
+
+categories_as_tabs:
+  general:
+  images:
+  videos:
+  news:
+  map:
+  music:
+  it:
+  science:
+  files:
+  social_media:
+
+# Essential engines from working template
+engines:
+  - name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+    display_type: ['infobox']
+    categories: [general]
+
+  - name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+
+  - name: google
+    engine: google
+    shortcut: go
+
+  - name: bing
+    engine: bing
+    shortcut: bi
+
+  - name: brave
+    engine: brave
+    shortcut: br
+    time_range_support: true
+    paging: true
+    categories: [general, web]
+    brave_category: search
+
+  - name: startpage
+    engine: startpage
+    shortcut: sp
+    startpage_categ: web
+    categories: [general, web]
+
+  - name: wikidata
+    engine: wikidata
+    shortcut: wd
+    timeout: 3.0
+    weight: 2
+    display_type: ['infobox']
+    categories: [general]
+
+  - name: github
+    engine: github
+    shortcut: gh
+
+  - name: stackoverflow
+    engine: stackexchange
+    shortcut: st
+    api_site: 'stackoverflow'
+    categories: [it, q&a]
+
+  - name: reddit
+    engine: reddit
+    shortcut: re
+    page_size: 25
+    categories: [social_media]
+
+  - name: youtube
+    shortcut: yt
+    engine: youtube_noapi
+
+  - name: arxiv
+    engine: arxiv
+    shortcut: arx
+    timeout: 4.0
+
+  - name: bing images
+    engine: bing_images
+    shortcut: bii
+    categories: [images]
+
+  - name: bing news
+    engine: bing_news
+    shortcut: bin
+    categories: [news]
+
+  - name: google images
+    engine: google_images
+    shortcut: goi
+    categories: [images]
+
+  - name: google news
+    engine: google_news
+    shortcut: gon
+    categories: [news]
+
+  - name: currency
+    engine: currency_convert
+    categories: general
+    shortcut: cc
+
+doi_resolvers:
+  oadoi.org: 'https://oadoi.org/'
+  doi.org: 'https://doi.org/'
+  doai.io: 'https://dissem.in/'
+  sci-hub.se: 'https://sci-hub.se/'
+  sci-hub.st: 'https://sci-hub.st/'
+  sci-hub.ru: 'https://sci-hub.ru/'
+
+default_doi_resolver: 'oadoi.org'

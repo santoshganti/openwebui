@@ -1,0 +1,260 @@
+{
+  "main": {
+    "id": "90058d01ef069190",
+    "type": "split",
+    "children": [
+      {
+        "id": "63322bf57bb64eea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70bfcd01d6f809f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "active/openwebui/O3/O3 Journey/o3-journey-documentation.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "o3-journey-documentation"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48d3c27f3078dd97",
+    "type": "split",
+    "children": [
+      {
+        "id": "eac5f4e960bb0fb4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "67438e63b964c168",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c65a749f6f04c69a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "72e0a0d429d53f02",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 643.5
+  },
+  "right": {
+    "id": "1f5a17c7259a5a07",
+    "type": "split",
+    "children": [
+      {
+        "id": "45a0d94349d9bb64",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d51916cef56d1498",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b91a52e30b744901",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "857ec204e2e5a8e0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "29d23b66107848e5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d28d2928f68b37d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f81c7dac2cd50008",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "active/openwebui/O3/O3 Journey/o3-journey-documentation.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of o3-journey-documentation"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 397.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "remotely-save:Remotely Save": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "omnisearch:Omnisearch": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-importer:Open Importer": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "markdown-table-editor:Open Markdown Table Editor": false
+    }
+  },
+  "active": "70bfcd01d6f809f8",
+  "lastOpenFiles": [
+    "active/data/actionable/o3-journey-documentation.md",
+    "active/openwebui/O3/O3 Journey/o3-journey-documentation.md",
+    "active/data/actionable",
+    "system/obsidian/plugins/text-extractor/cache/95862c9d3f81aa795c84bc936285f13d.json",
+    "system/obsidian/plugins/text-extractor/cache/894d7dacdb35e6820938079fae07f7ea.json",
+    "system/obsidian/plugins/text-extractor/cache/590c3eb4e4959be366b010c5ffbe5400.json",
+    "system/obsidian/plugins/text-extractor/cache/10168b9b29cdd6ac5222c94ffa04780d.json",
+    "system/obsidian/plugins/text-extractor/cache/51aaffa035007f6fe1b0a3629dfa4d31.json",
+    "system/obsidian/plugins/text-extractor/cache/4719f67600b1f3ad89b6127ff90d4d3b.json",
+    "system/obsidian/plugins/text-extractor/cache/5cfa41cd64b6fb2ab2a7e3e9d36d647b.json",
+    "system/obsidian/plugins/text-extractor/cache/487d76787ac0de6e5e5d38a000865c9b.json",
+    "system/obsidian/plugins/text-extractor/cache/5a98f833fd655344340894cbe18488ac.json",
+    "active/data/threads/OpenWebUI - O3 - Thread - Architecture Synthesis Lyapunov Exponents.md",
+    "active/data/actionable/O3 - FastAPI Micro-service/O3 - Insights - Cost Analysis - Response.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Cost Analysis - Response.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Cross-Architecture Instruction.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - FastAPI Micro-service.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Python Validator.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Do possibility-space contracts create natural boundaries.md",
+    "active/data/actionable/O3 - FastAPI Micro-service/O3 - Insights - Cross-Architecture Instruction.md",
+    "active/Tasks.md",
+    "active/data/actionable/O3 - FastAPI Micro-service/O3 - Insights - FastAPI Micro-service.md",
+    "active/data/actionable/O3 - FastAPI Micro-service/O3 - Insights - Python Validator.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Information Theory ConstitutionAI Review.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Oh! Wow!.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - FastAPI Micro-service + Docker Integration Request.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - Possibility-space contracts  Recognised.md",
+    "active/openwebui/O3/O3 Journey/active/response/O3 - Response - System Instructions Template.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - Cost Analysis and Paradigm Validation Request.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - Platform Contamination Evidence.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - Interface Specification Clarification.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - Constitutional AI Mathematical Framework Review.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - System Prompt and Security Concern Analysis.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - Validator Code Development Request.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - Information Theory Framework Assessment.md",
+    "active/openwebui/O3/O3 Journey/active/prompts/O3 - Prompt - OpenWebUI Integration and Constitutional AI Review Request.md",
+    "system/icons/remix-icons/User2Fill.svg",
+    "system/icons/font-awesome-solid/UserSecret.svg",
+    "system/icons/SVG/PersonalManagementSystemDark.svg",
+    "system/makemd/thumbnails/-2069849646.png",
+    "system/makemd/thumbnails/1004751080.png",
+    "system/makemd/thumbnails/437505738.jpg",
+    "system/makemd/thumbnails/-1639977867.png",
+    "system/makemd/thumbnails/668471132.png",
+    "system/makemd/thumbnails/605830588.png",
+    "system/makemd/thumbnails/1232473879.png",
+    "research/analysis/O3 Journey/Untitled.canvas"
+  ]
+}

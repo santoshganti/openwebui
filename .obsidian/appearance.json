@@ -1,0 +1,15 @@
+{
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "accentColor": "",
+  "nativeMenus": false,
+  "monospaceFontFamily": "Cascadia Code,Cascadia Mono,Cambria Math",
+  "interfaceFontFamily": "Segoe UI,Microsoft Sans Serif",
+  "textFontFamily": "Segoe UI,Microsoft Sans Serif",
+  "cssTheme": "",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "metadata-icon-auto-gen"
+  ],
+  "baseFontSizeAction": true
+}

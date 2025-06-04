@@ -1,0 +1,17 @@
+pytz
+python-dateutil
+pycparser
+cffi
+numpy
+pandas
+tabulate
+matplotlib        # For waveform and symbolic diagrams
+graphviz         # Optional for topology/flow diagrams
+openai          # For LLM API interaction if applicable
+tiktoken          # For token counting/management in LLMs
+scipy            # Numerical tools that complement numpy
+pip-tools
+PyYAML
+tzdata
+six
+pyzfs
