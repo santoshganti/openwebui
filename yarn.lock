@@ -1061,6 +1061,16 @@ is-stream@^1.1.0:
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha512-uQPm8kcs47jx38atAcWTVxyltQYoPT68y9aWYdV6yWXSyW8mzSat0TL6CiWdZeCdF3KrAvpVtnHbTv4RN+rqdQ==
 
+is-undefined@^1.0.0:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/is-undefined/-/is-undefined-1.0.12.tgz#1b2241ef0450bc32c725228cc8d4efe9162ef127"
+  integrity sha512-qaX2mymwUhMq+NQPnx5iR/u2PgqhL6jLzDunMmonOgVofqoFhxzd6kOmiL0DLYZUkN/RvNWYPenoANVn5phlaA==
+
+is-win@^1.0.2:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/is-win/-/is-win-1.0.11.tgz#ee3bead82a511f8352695447502eafe342a5d9a9"
+  integrity sha512-+XpgpizPqNzohXiqme7pfhAhpoG0Eo+CtuSx/XYW4enarERuheDbNbFrm4+XYylpV1w/eI+si5itFA0RfCWjog==
+
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
@@ -1551,6 +1561,15 @@ picomatch@^2.3.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
+powershell@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/powershell/-/powershell-2.3.3.tgz#3067d460fc40335974e005caa2b34886db9a5706"
+  integrity sha512-xLEFA2BWxlhrcp2wecH3rGVhG/z1kQDFvie1ynHZVjXdcYWaIaUrshCa8kep7Sj8c0EdNcNnyZU79oTbJRFDsQ==
+  dependencies:
+    is-undefined "^1.0.0"
+    is-win "^1.0.2"
+    spawno "^1.0.0"
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
@@ -1595,6 +1614,11 @@ prettier@>=3.0.0-alpha.3, prettier@^3.0.0, prettier@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.5.3.tgz#4fc2ce0d657e7a02e602549f053b239cb7dfe1b5"
   integrity sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==
+
+proc-output@^1.0.0:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/proc-output/-/proc-output-1.0.9.tgz#f7362af2da29ff8d22ad5c283c6da1af382bd84d"
+  integrity sha512-XARWwM2pPNU/U8V4OuQNQLyjFqvHk1FRB5sFd1CCyT2vLLfDlLRLE4f6njcvm4Kyek1VzvF8MQRAYK1uLOlZmw==
 
 proxy-from-env@^1.1.0:
   version "1.1.0"
@@ -1756,6 +1780,13 @@ signal-exit@^4.0.1:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
+
+spawno@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/spawno/-/spawno-1.0.4.tgz#8df56503fc315693588e7221494d5c94f165bb57"
+  integrity sha512-euy9JLkCC2SvXNYZAi9WBTHDxbjSWNCaeLhLIH+BGW1Xb/3yKxoWOT2kanSS1a5wB0iukDYu79FJMNJsGW7azA==
+  dependencies:
+    proc-output "^1.0.0"
 
 "string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
