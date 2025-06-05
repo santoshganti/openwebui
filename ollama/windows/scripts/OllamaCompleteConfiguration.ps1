@@ -19,8 +19,8 @@ if %errorLevel% == 0 (
 
 echo.
 echo Step 1: Configuring Model Storage Paths...
-setx OLLAMA_MODELS "D:\Ollama\Models" /M
-setx OLLAMA_CACHE "D:\Ollama\Cache" /M
+setx OLLAMA_MODELS "D:\AppStorage\Ollama\Models" /M
+setx OLLAMA_CACHE "D:\AppStorage\Ollama\Cache" /M
 setx OLLAMA_HOST "0.0.0.0:11434" /M
 if %errorLevel% == 0 (
     echo ✓ Environment variables set successfully
@@ -30,10 +30,10 @@ if %errorLevel% == 0 (
 
 echo.
 echo Step 2: Creating Directory Structure...
-mkdir "D:\Ollama\Models" 2>nul
-mkdir "D:\Ollama\Cache" 2>nul
-mkdir "D:\Ollama\Logs" 2>nul
-if exist "D:\Ollama\Models" (
+mkdir "D:\AppStorage\Ollama\Models" 2>nul
+mkdir "D:\AppStorage\Ollama\Cache" 2>nul
+mkdir "D:\AppStorage\Ollama\Logs" 2>nul
+if exist "D:\AppStorage\Ollama\Models" (
     echo ✓ Model storage directories created
 ) else (
     echo ✗ Failed to create directories
@@ -91,7 +91,7 @@ echo Application Installation:
 dir "D:\Applications\Ollama" | findstr "bytes"
 echo.
 echo Model Storage Space Available:
-for /f %%i in ("D:\Ollama\Models") do (
+for /f %%i in ("D:\AppStorage\Ollama\Models") do (
     dir %%~di | findstr "bytes free"
 )
 
@@ -100,17 +100,17 @@ echo ====================================
 echo Configuration Summary
 echo ====================================
 echo Application Path: D:\Applications\Ollama\
-echo Model Storage: D:\Ollama\Models\
-echo Cache Storage: D:\Ollama\Cache\
+echo Model Storage: D:\AppStorage\Ollama\Models\
+echo Cache Storage: D:\AppStorage\Ollama\Cache\
 echo Network Binding: 0.0.0.0:11434
 echo.
 echo Next Steps:
 echo 1. Test network access: curl http://10.0.0.84:11434/api/version
 echo 2. Download first model: ollama pull qwen3:4b
-echo 3. Verify storage location: dir D:\Ollama\Models
+echo 3. Verify storage location: dir D:\AppStorage\Ollama\Models
 echo.
 echo Manual Start Command (if needed):
-echo set OLLAMA_MODELS=D:\Ollama\Models
+echo set OLLAMA_MODELS=D:\AppStorage\Ollama\Models
 echo set OLLAMA_HOST=0.0.0.0:11434
 echo "D:\Applications\Ollama\ollama.exe" serve
 echo.
