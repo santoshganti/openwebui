@@ -16,6 +16,7 @@ setx OLLAMA_HOST "0.0.0.0:11434" /M
 
 # Restrictive (Production)
 setx OLLAMA_ORIGINS "http://localhost,https://localhost,http://localhost:*,https://localhost:*,http://127.0.0.1,https://127.0.0.1,http://127.0.0.1:*,https://127.0.0.1:*,http://0.0.0.0,https://0.0.0.0,http://0.0.0.0:*,https://0.0.0.0:*,app://*,file://*,tauri://*,vscode-webview://*,vscode-file://*,http://ollama.services.darkcatalist.com,https://ollama.services.darkcatalist.com,http://ollama.windows.darkcatalist.com,https://ollama.windows.darkcatalist.com,https://openwebui.services.darkcatalist.com,http://openwebui.services.darkcatalist.com" /M
+setx OLLAMA_ORIGINS "*" /M
 
 setx OLLAMA_MODELS "D:\AppStorage\Ollama\Models" /M
 
