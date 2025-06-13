@@ -1,5 +1,5 @@
 #!/bin/bash
 
-devstral:24b
+ollama pull devstral:24b
 
-devstral:24b-small-2505-q4_K_M
+ollama pull devstral:24b-small-2505-q4_K_M

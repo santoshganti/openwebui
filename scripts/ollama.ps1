@@ -49,3 +49,9 @@ setx OLLAMA_MODELS "D:\AppStorage\Ollama\Models" /M
 # http://openwebui.services.darkcatalist.com,
 
 # app://*,file://*,tauri://*,vscode-webview://*,vscode-file://*,
+
+# "C:\Program Files"
+# "C:\ProgramData"
+
+OllamaSetup.exe /DIR="D:\ProgramData\Ollama"
+
