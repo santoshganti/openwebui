@@ -29,6 +29,17 @@
             }
         ]
     },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "editor.parameterHints.enabled": false,
     //Files
     "files.autoSave": "afterDelay",
     "files.associations": {
@@ -265,7 +276,7 @@
     "python.languageServer": "Jedi",
     "python.analysis.languageServerMode": "default",
     "python.venvPath": "$HOME/.local/share/pyzfs",
-    "python.autoComplete.extraPaths": [],
+    "python.autoComplete.extraPaths": [ ],
     "python.analysis.fixAll": [
         "source.unusedImports"
     ],
