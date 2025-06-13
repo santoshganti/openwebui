@@ -12,7 +12,8 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     //Editor
-    "editor.fontFamily": "'Cascadia Code'",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontFamily": "Cascadia Code",
     "editor.codeLensFontFamily": "Cascadia Code",
     "editor.inlayHints.fontFamily": "Cascadia Code",
     "editor.autoIndent": "advanced",
@@ -28,6 +29,17 @@
             }
         ]
     },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "editor.parameterHints.enabled": false,
     //Files
     "files.autoSave": "afterDelay",
     "files.associations": {
@@ -80,6 +92,10 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontFamily": "Cascadia Code",
     "terminal.integrated.fontSize": 13,
+    // Shell Format
+    "shellformat.useEditorConfig": true,
+    // Containers
+    "containers.contexts.showInStatusBar": true,
     //Security
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.banner": "never",
@@ -91,6 +107,16 @@
     "http.proxyStrictSSL": false,
     "http.electronFetch": true,
     "http.proxyAuthorization": null,
+    // Coplilot
+    "github.copilot.enable": {
+        "*": true
+    },
+    "github.copilot.chat.byok.ollamaEndpoint": "https://ollama.services.darkcatalist.com",
+    "github.copilot.chat.localeOverride": "en",
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.reviewSelection.instructions": [
+    ],
     // Remote SSH
     "remote.SSH.remotePlatform": {
         "macos.homelab.darkcatalist.com": "macOS",
@@ -148,6 +174,8 @@
         "steamdeckwifi.homelab.darkcatalist.com": "linux",
     },
     // Settings Sync
+    // These settings are ignored in Settings Sync to prevent environment-specific configurations
+    // from being synced across different machines or environments.
     "settingsSync.ignoredSettings": [
         "-ansible.python.activationScript",
         "-ansible.python.interpreterPath",
@@ -248,7 +276,7 @@
     "python.languageServer": "Jedi",
     "python.analysis.languageServerMode": "default",
     "python.venvPath": "$HOME/.local/share/pyzfs",
-    "python.autoComplete.extraPaths": [],
+    "python.autoComplete.extraPaths": [ ],
     "python.analysis.fixAll": [
         "source.unusedImports"
     ],
@@ -287,10 +315,6 @@
     "yaml.maxItemsComputed": 20000,
     "yaml.schemas": {
         "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "docker-compose*.yml",
-        "https://json.schemastore.org/yamllint.json": [
-            "file:///home/deck/ode/gitlab/nythrel/obsidian/openwebui/system/templates/template.yaml",
-            "file:///Users/sganti/ode/obsidian/separatrix/system/templates/template.yaml"
-        ]
     },
     // yaml
     "[yaml]": {
@@ -342,6 +366,12 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    //html
+    "html.format.enable": false,
+    "html.format.indentInnerHtml": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     //Markdown
     "markdown.extension.preview.autoShowPreviewToSide": true,
     "markdown.extension.print.theme": "dark",
@@ -349,22 +379,9 @@
     "markdown.trace.server": "messages",
     "markdown.server.log": "debug",
     "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
-    "parallels-desktop.extension.path": "/Users/sganti/.parallels-desktop-vscode",
-    "parallels-desktop.git.path": "/opt/homebrew/bin/git",
-    "parallels-desktop.brew.path": "/opt/homebrew/bin/brew",
-    "parallels-desktop.prlctl.path": "/usr/local/bin/prlctl",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "parallels-desktop.devops-service.path": "/Users/sganti/.parallels-desktop-vscode/tools/prldevops",
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "markdown.occurrencesHighlight.enabled": true,
     "markdown.preview.openMarkdownLinks": "inEditor",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[java]": {
-        "editor.defaultFormatter": "redhat.java"
-    },
-    "containers.contexts.showInStatusBar": true,
 }
