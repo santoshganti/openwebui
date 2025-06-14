@@ -12,6 +12,6 @@ ollama pull llama3.2:3b
 ollama pull llama3.2:3b-text-fp16
 ollama pull llama3.2:3b-instruct-fp16
 
-
-
+################# llama3.2-vision:11b #################
+ollama pull llama3.2-vision:11b
 
