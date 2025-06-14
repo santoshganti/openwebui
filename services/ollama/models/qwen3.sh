@@ -17,11 +17,12 @@ ollama pull qwen3:14b-q8_0 # 16GB
 
 # qwen3:30b
 ollama pull qwen3:30b # 19GB
+# qwen3:30b-a3b
+ollama pull qwen3:30b-a3b # 19GB
+ollama pull qwen3:30b-a3b-q4_K_M # 19GB
 
 # qwen3:32b
 ollama pull qwen3:32b # 20GB
 ollama pull qwen3:32b-q4_K_M #20GB
 
-# qwen3:30b-a3b
-ollama pull qwen3:30b-a3b # 19GB
-ollama pull qwen3:30b-a3b-q4_K_M # 19GB
+
