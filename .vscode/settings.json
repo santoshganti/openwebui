@@ -7,8 +7,6 @@
   "workbench.editor.defaultBinaryEditor": "vscode.markdown.preview.editor",
   "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-
-  "containers.contexts.showInStatusBar": true,
   //Explorer
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -126,13 +124,6 @@
   "yaml.format.enable": false,
   "yaml.suggest.parentSkeletonSelectedFirst": false,
   "yaml.maxItemsComputed": 20000,
-  "yaml.schemas": {
-    "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "docker-compose*.yml",
-    "https://json.schemastore.org/yamllint.json": [
-      "file:///home/deck/ode/gitlab/nythrel/obsidian/openwebui/system/templates/template.yaml",
-      "file:///Users/sganti/ode/obsidian/separatrix/system/templates/template.yaml"
-    ]
-  },
   // yaml
   "[yaml]": {
     "editor.insertSpaces": true,
@@ -165,24 +156,6 @@
       "strings": true
     }
   },
-  //// Java Language Settings
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  // CSharp
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp",
-    "editor.formatOnSave": false
-  },
-  // Helm
-  "[helm]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.formatOnSave": false
-  },
-  //bash
-  "[shellscript]": {
-    "editor.defaultFormatter": "shakram02.bash-beautify"
-  },
   //javascript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -192,10 +165,6 @@
   "markdown.server.log": "debug",
   "markdown.occurrencesHighlight.enabled": true,
   "markdown.preview.openMarkdownLinks": "inEditor",
-  "markdown.extension.preview.autoShowPreviewToSide": true,
-  "markdown.extension.print.theme": "dark",
-  "markdown.extension.completion.enabled": true,
-  "markdown-preview-enhanced.frontMatterRenderingOption": "code block",
   //html
   "html.format.enable": false,
   "html.format.indentInnerHtml": true,
